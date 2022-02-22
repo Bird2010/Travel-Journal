@@ -6,6 +6,8 @@ import ListLocations from "./components/list-locations.component";
 import AddLocation from "./components/add-location.component";
 import EditLocation from "./components/edit-location.component";
 import CreateUser from "./components/create-user.component";
+import MapList from "./components/map.component";
+
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <Route path = "/add" element = {<AddLocation />} ></Route>
         <Route path = "/edit/:id" element = {<EditLocation />} ></Route>
         <Route path = "/user" element = {<CreateUser />} ></Route>
+        <Route path = "/map" element = {<MapList />} ></Route>
       </Routes>
     </div>
     </Router>
