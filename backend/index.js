@@ -13,6 +13,7 @@ app.get('/', function(req,res) {
 });
 
 const uri = "mongodb+srv://mongouser:devry123@cluster0.0xiiw.mongodb.net/travel?retryWrites=true&w=majority";
+
 mongoose.connect(uri);
 const connection = mongoose.connection;
 connection.once("open", () => {
